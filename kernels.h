@@ -17,3 +17,6 @@
 #include "./include/kernel17.h"
 #include "./include/kernel18.h"
 #include "./include/kernel19.h"
+#include "./include/kernel20.h"
+#include "./include/kernel21.h"
+

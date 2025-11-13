@@ -1,0 +1,2 @@
+source /opt/cray/pe/modules/3.2.11.7/init/bash
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/nasa/intel/oneapi-2025.2.1/mkl/2025.2/lib

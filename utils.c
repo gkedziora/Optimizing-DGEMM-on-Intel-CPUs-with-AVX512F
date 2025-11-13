@@ -164,6 +164,15 @@ void test_mydgemm_v19(int m,int n,int k,double alpha,double *A,double *B,double 
     mydgemm_cpu_v19(m,n,k,alpha,A,m,B,k,beta,C,m);
 }
 
+void test_mydgemm_v20(int m,int n,int k,double alpha,double *A,double *B,double beta,double *C){
+    mydgemm_cpu_v20(m,n,k,alpha,A,m,B,k,beta,C,m);
+}
+
+void test_mydgemm_v21(int m,int n,int k,double alpha,double *A,double *B,double beta,double *C){
+    printf("running mydgemm_cpu_v21\n");
+    mydgemm_cpu_v21(m,n,k,alpha,A,m,B,k,beta,C,m);
+}
+
 void test_kernel(int kernel_num,int m,int n,int k,double alpha,double *A,double *B,double beta,double *C){
     switch (kernel_num){
         case 0: test_mkl(m,n,k,alpha,A,B,beta,C); break;
@@ -186,6 +195,8 @@ void test_kernel(int kernel_num,int m,int n,int k,double alpha,double *A,double 
         case 17: test_mydgemm_v17(m,n,k,alpha,A,B,beta,C); break;
         case 18: test_mydgemm_v18(m,n,k,alpha,A,B,beta,C); break;
         case 19: test_mydgemm_v19(m,n,k,alpha,A,B,beta,C); break;
+        case 20: test_mydgemm_v20(m,n,k,alpha,A,B,beta,C); break;
+        case 21: test_mydgemm_v21(m,n,k,alpha,A,B,beta,C); break;
         default: break;
     }
 }

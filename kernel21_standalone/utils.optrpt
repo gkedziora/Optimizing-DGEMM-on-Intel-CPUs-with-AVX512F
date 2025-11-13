@@ -1,0 +1,1301 @@
+Begin optimization report for: scale_c_k21
+
+LOOP BEGIN at ././kernel21.h (34, 9)
+<Multiversioned v2>
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+        remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (34, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+    LOOP END
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (28, 9)
+    remark #25423: Invariant If condition at line 29 hoisted out of this loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25439: Loop unrolled with remainder by 8
+
+    LOOP BEGIN at ././kernel21.h (29, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (28, 9)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: mydgemm_cpu_v21
+
+LOOP BEGIN at ././kernel21.h (34, 9)
+<Multiversioned v2>
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+        remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (34, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+    LOOP END
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (28, 9)
+    remark #25423: Invariant If condition at line 29 hoisted out of this loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25439: Loop unrolled with remainder by 8
+
+    LOOP BEGIN at ././kernel21.h (29, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (28, 9)
+<Remainder loop>
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (207, 5)
+
+    LOOP BEGIN at ././kernel21.h (210, 9)
+
+        LOOP BEGIN at ././kernel21.h (113, 5)
+        <Predicate Optimized v1>
+            remark #25423: Invariant If condition at line 114 hoisted out of this loop
+            remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at ././kernel21.h (114, 9)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed OUTPUT dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] 
+                remark #15346: vector dependence: assumed OUTPUT dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] 
+                remark #15346: vector dependence: assumed OUTPUT dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] 
+                remark #15346: vector dependence: assumed OUTPUT dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] 
+                remark #15346: vector dependence: assumed OUTPUT dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] 
+                remark #15346: vector dependence: assumed OUTPUT dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (116, 17) ] 
+
+                LOOP BEGIN at ././kernel21.h (115, 13)
+                    remark #25436: Loop completely unrolled by 4
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at ././kernel21.h (113, 5)
+        <Predicate Optimized v2>
+            remark #25530: Stmt at line 119 sinked after loop using last value computation
+            remark #25260: Dead loop optimized away
+        LOOP END
+
+        LOOP BEGIN at ././kernel21.h (124, 9)
+
+            LOOP BEGIN at ././kernel21.h (126, 13)
+                remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                remark #15346: vector dependence: assumed FLOW dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (127, 17) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (127, 37) ] 
+            LOOP END
+
+            LOOP BEGIN at ././kernel21.h (129, 13)
+                remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at ././kernel21.h (216, 13)
+
+            LOOP BEGIN at ././kernel21.h (85, 5)
+            <Predicate Optimized v1>
+                remark #25423: Invariant If condition at line 86 hoisted out of this loop
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel21.h (86, 9)
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+                    remark #25439: Loop unrolled with remainder by 8
+
+                    LOOP BEGIN at ././kernel21.h (87, 13)
+                        remark #15300: LOOP WAS VECTORIZED
+                        remark #15305: vectorization support: vector length 4
+                        remark #25436: Loop completely unrolled by 1
+                    LOOP END
+                LOOP END
+
+                LOOP BEGIN at ././kernel21.h (86, 9)
+                <Remainder loop>
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel21.h (85, 5)
+            <Predicate Optimized v2>
+                remark #25530: Stmt at line 91 sinked after loop using last value computation
+                remark #25260: Dead loop optimized away
+            LOOP END
+
+            LOOP BEGIN at ././kernel21.h (96, 9)
+
+                LOOP BEGIN at ././kernel21.h (98, 13)
+                <Multiversioned v2>
+                    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+                LOOP END
+
+                LOOP BEGIN at ././kernel21.h (98, 13)
+                <Multiversioned v1>
+                    remark #25228: Loop multiversioned for Data Dependence
+                    remark #15300: LOOP WAS VECTORIZED
+                    remark #15305: vectorization support: vector length 2
+                LOOP END
+
+                LOOP BEGIN at ././kernel21.h (98, 13)
+                <Remainder loop for vectorization>
+                LOOP END
+
+                LOOP BEGIN at ././kernel21.h (101, 13)
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel21.h (142, 5)
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel21.h (143, 9)
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at ././kernel21.h (56, 5)
+                        remark #15300: LOOP WAS VECTORIZED
+                        remark #15305: vectorization support: vector length 8
+                    LOOP END
+
+                    LOOP BEGIN at ././kernel21.h (56, 5)
+                    <Remainder loop for vectorization>
+                    LOOP END
+                LOOP END
+
+                LOOP BEGIN at ././kernel21.h (152, 13)
+                    remark #25423: Invariant If condition at line 153 hoisted out of this loop
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at ././kernel21.h (153, 17)
+                        remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                        LOOP BEGIN at ././kernel21.h (155, 21)
+                            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                            remark #15346: vector dependence: assumed FLOW dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (156, 25) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (156, 35) ] 
+                            remark #25436: Loop completely unrolled by 4
+                        LOOP END
+                    LOOP END
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel21.h (165, 9)
+            <Predicate Optimized v1>
+                remark #25423: Invariant If condition at line 166 hoisted out of this loop
+                remark #25423: Invariant If condition at line 168 hoisted out of this loop
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel21.h (166, 13)
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at ././kernel21.h (168, 17)
+                        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                        remark #15346: vector dependence: assumed FLOW dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (169, 21) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel21.h (169, 28) ] 
+                        remark #25439: Loop unrolled with remainder by 4
+                    LOOP END
+
+                    LOOP BEGIN at ././kernel21.h (168, 17)
+                    <Remainder loop>
+                    LOOP END
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel21.h (165, 9)
+            <Predicate Optimized v2>
+                remark #25260: Dead loop optimized away
+
+                LOOP BEGIN at ././kernel21.h (166, 13)
+                    remark #25260: Dead loop optimized away
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (34, 9)
+<Multiversioned v2>
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+        remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (34, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+    LOOP END
+
+    LOOP BEGIN at ././kernel21.h (35, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (28, 9)
+    remark #25423: Invariant If condition at line 29 hoisted out of this loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25439: Loop unrolled with remainder by 8
+
+    LOOP BEGIN at ././kernel21.h (29, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel21.h (28, 9)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: scale_c_k22
+
+LOOP BEGIN at ././kernel22.h (34, 9)
+<Multiversioned v2>
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+        remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (34, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+    LOOP END
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (28, 9)
+    remark #25423: Invariant If condition at line 29 hoisted out of this loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25439: Loop unrolled with remainder by 8
+
+    LOOP BEGIN at ././kernel22.h (29, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (28, 9)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: mydgemm_cpu_v22
+
+LOOP BEGIN at ././kernel22.h (34, 9)
+<Multiversioned v2>
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+        remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (34, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+    LOOP END
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (28, 9)
+    remark #25423: Invariant If condition at line 29 hoisted out of this loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25439: Loop unrolled with remainder by 8
+
+    LOOP BEGIN at ././kernel22.h (29, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (28, 9)
+<Remainder loop>
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (212, 5)
+
+    LOOP BEGIN at ././kernel22.h (215, 9)
+
+        LOOP BEGIN at ././kernel22.h (113, 5)
+            remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at ././kernel22.h (114, 9)
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel22.h (115, 1)
+                    remark #15301: SIMD LOOP WAS VECTORIZED
+                    remark #15305: vectorization support: vector length 8
+                LOOP END
+
+                LOOP BEGIN at ././kernel22.h (115, 1)
+                <Remainder loop for vectorization>
+                    remark #15440: remainder loop was vectorized (masked)
+                    remark #15305: vectorization support: vector length 8
+                    remark #25261: Single iteration loop optimized away
+                LOOP END
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at ././kernel22.h (126, 9)
+            remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at ././kernel22.h (127, 1)
+                remark #15301: SIMD LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 8
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (127, 1)
+            <Remainder loop for vectorization>
+                remark #15440: remainder loop was vectorized (masked)
+                remark #15305: vectorization support: vector length 8
+                remark #25261: Single iteration loop optimized away
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at ././kernel22.h (132, 9)
+            remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+            LOOP BEGIN at ././kernel22.h (133, 1)
+                remark #15301: SIMD LOOP WAS VECTORIZED
+                remark #15305: vectorization support: vector length 8
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (133, 1)
+            <Remainder loop for vectorization>
+                remark #15440: remainder loop was vectorized (masked)
+                remark #15305: vectorization support: vector length 8
+                remark #25261: Single iteration loop optimized away
+            LOOP END
+        LOOP END
+
+        LOOP BEGIN at ././kernel22.h (221, 13)
+
+            LOOP BEGIN at ././kernel22.h (85, 5)
+            <Predicate Optimized v1>
+                remark #25423: Invariant If condition at line 86 hoisted out of this loop
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel22.h (86, 9)
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+                    remark #25439: Loop unrolled with remainder by 8
+
+                    LOOP BEGIN at ././kernel22.h (87, 13)
+                        remark #15300: LOOP WAS VECTORIZED
+                        remark #15305: vectorization support: vector length 4
+                        remark #25436: Loop completely unrolled by 1
+                    LOOP END
+                LOOP END
+
+                LOOP BEGIN at ././kernel22.h (86, 9)
+                <Remainder loop>
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (85, 5)
+            <Predicate Optimized v2>
+                remark #25530: Stmt at line 91 sinked after loop using last value computation
+                remark #25260: Dead loop optimized away
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (96, 9)
+
+                LOOP BEGIN at ././kernel22.h (98, 13)
+                    remark #15300: LOOP WAS VECTORIZED
+                    remark #15305: vectorization support: vector length 2
+                LOOP END
+
+                LOOP BEGIN at ././kernel22.h (98, 13)
+                <Remainder loop for vectorization>
+                LOOP END
+
+                LOOP BEGIN at ././kernel22.h (101, 13)
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (147, 5)
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel22.h (148, 9)
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at ././kernel22.h (56, 5)
+                        remark #15300: LOOP WAS VECTORIZED
+                        remark #15305: vectorization support: vector length 8
+                    LOOP END
+
+                    LOOP BEGIN at ././kernel22.h (56, 5)
+                    <Remainder loop for vectorization>
+                    LOOP END
+                LOOP END
+
+                LOOP BEGIN at ././kernel22.h (157, 13)
+                    remark #25423: Invariant If condition at line 158 hoisted out of this loop
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at ././kernel22.h (158, 17)
+                        remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                        LOOP BEGIN at ././kernel22.h (160, 21)
+                            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                            remark #15346: vector dependence: assumed FLOW dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel22.h (161, 25) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel22.h (161, 35) ] 
+                            remark #25436: Loop completely unrolled by 4
+                        LOOP END
+                    LOOP END
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (170, 9)
+            <Predicate Optimized v1>
+                remark #25423: Invariant If condition at line 171 hoisted out of this loop
+                remark #25423: Invariant If condition at line 173 hoisted out of this loop
+                remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                LOOP BEGIN at ././kernel22.h (171, 13)
+                    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+                    LOOP BEGIN at ././kernel22.h (173, 17)
+                        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+                        remark #15346: vector dependence: assumed FLOW dependence between [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel22.h (174, 21) ] and [ /nobackup/gkedzior/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F/kernel21_standalone/././kernel22.h (174, 28) ] 
+                        remark #25439: Loop unrolled with remainder by 4
+                    LOOP END
+
+                    LOOP BEGIN at ././kernel22.h (173, 17)
+                    <Remainder loop>
+                    LOOP END
+                LOOP END
+            LOOP END
+
+            LOOP BEGIN at ././kernel22.h (170, 9)
+            <Predicate Optimized v2>
+                remark #25260: Dead loop optimized away
+
+                LOOP BEGIN at ././kernel22.h (171, 13)
+                    remark #25260: Dead loop optimized away
+                LOOP END
+            LOOP END
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (34, 9)
+<Multiversioned v2>
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+        remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (34, 9)
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 8
+    LOOP END
+
+    LOOP BEGIN at ././kernel22.h (35, 13)
+    <Remainder loop for vectorization>
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (28, 9)
+    remark #25423: Invariant If condition at line 29 hoisted out of this loop
+    remark #15335: loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+    remark #25439: Loop unrolled with remainder by 8
+
+    LOOP BEGIN at ././kernel22.h (29, 13)
+    LOOP END
+LOOP END
+
+LOOP BEGIN at ././kernel22.h (28, 9)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: print_vector
+
+LOOP BEGIN at utils.c (11, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25439: Loop unrolled with remainder by 8
+LOOP END
+
+LOOP BEGIN at utils.c (11, 5)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: print_matrix_lda
+
+LOOP BEGIN at utils.c (22, 5)
+    remark #15541: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+    LOOP BEGIN at utils.c (23, 9)
+        remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+        remark #25439: Loop unrolled with remainder by 8
+    LOOP END
+
+    LOOP BEGIN at utils.c (23, 9)
+    <Remainder loop>
+    LOOP END
+LOOP END
+=================================================================
+
+Begin optimization report for: print_matrix
+
+LOOP BEGIN at utils.c (34, 5)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25439: Loop unrolled with remainder by 4
+LOOP END
+
+LOOP BEGIN at utils.c (34, 5)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: get_sec
+=================================================================
+
+Begin optimization report for: randomize_matrix
+
+LOOP BEGIN at utils.c (57, 9)
+    remark #25567: 2 loops have been collapsed
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25439: Loop unrolled with remainder by 8
+LOOP END
+
+LOOP BEGIN at utils.c (57, 9)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Begin optimization report for: copy_matrix
+
+LOOP BEGIN at utils.c (66, 5)
+<Multiversioned v1>
+<Multiversioned v1>
+    remark #25228: Loop multiversioned for Data Dependence
+    remark #25530: Stmt at line 66 sinked after loop using last value computation
+    remark #25399: memcopy generated
+    remark #25562: The loop has been multiversioned for the small trip count
+    remark #25260: Dead loop optimized away
+LOOP END
+
+LOOP BEGIN at utils.c (66, 5)
+<Multiversioned v2>
+    remark #25530: Stmt at line 66 sinked after loop using last value computation
+    remark #15615: Loop was not vectorized: fall-back loop for multiversioning
+LOOP END
+
+LOOP BEGIN at utils.c (66, 5)
+<Multiversioned v2>
+    remark #15300: LOOP WAS VECTORIZED
+    remark #15305: vectorization support: vector length 4
+LOOP END
+
+LOOP BEGIN at utils.c (66, 5)
+<Remainder loop for vectorization>
+LOOP END
+=================================================================
+
+Begin optimization report for: verify_matrix
+
+LOOP BEGIN at utils.c (77, 5)
+    remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria
+    remark #25439: Loop unrolled with remainder by 2
+LOOP END
+
+LOOP BEGIN at utils.c (77, 5)
+<Remainder loop>
+    remark #25261: Single iteration loop optimized away
+LOOP END
+=================================================================
+
+Begin optimization report for: test_mkl
+=================================================================
+
+Begin optimization report for: test_mydgemm_v21
+=================================================================
+
+Begin optimization report for: test_mydgemm_v22
+=================================================================
+
+Begin optimization report for: test_kernel
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: macro_kernel_k21
+
+DEAD STATIC FUNC: macro_kernel_k22
+
+DEAD STATIC FUNC: micro_kernel_k21
+
+DEAD STATIC FUNC: micro_kernel_k22
+
+DEAD STATIC FUNC: pack_a_k21
+
+DEAD STATIC FUNC: pack_a_k22
+
+DEAD STATIC FUNC: pack_b_k21
+
+DEAD STATIC FUNC: pack_b_k22
+
+COMPILE FUNC: scale_c_k21
+
+COMPILE FUNC: mydgemm_cpu_v21
+   -> INLINE: scale_c_k21 kernel21.h(185,9)
+   -> INLINE: scale_c_k21 kernel21.h(190,5)
+   -> DELETE: free kernel21.h(202,23)
+   -> INLINE: pack_b_k21 kernel21.h(214,13)
+   -> INLINE: pack_a_k21 kernel21.h(220,17)
+   -> INLINE: macro_kernel_k21 kernel21.h(223,17)
+      -> INLINE: micro_kernel_k21 kernel21.h(144,13)
+
+COMPILE FUNC: scale_c_k22
+
+COMPILE FUNC: mydgemm_cpu_v22
+   -> INLINE: scale_c_k22 kernel22.h(190,9)
+   -> INLINE: scale_c_k22 kernel22.h(195,5)
+   -> INLINE: pack_b_k22 kernel22.h(219,13)
+   -> INLINE: pack_a_k22 kernel22.h(225,17)
+   -> INLINE: macro_kernel_k22 kernel22.h(228,17)
+      -> INLINE: micro_kernel_k22 kernel22.h(149,13)
+
+COMPILE FUNC: print_vector
+   -> DELETE: printf utils.c(12,9)
+
+COMPILE FUNC: print_matrix_lda
+   -> DELETE: printf utils.c(24,13)
+
+COMPILE FUNC: print_matrix
+   -> DELETE: printf utils.c(38,13)
+   -> DELETE: printf utils.c(36,13)
+   -> DELETE: puts utils.c(41,17)
+
+COMPILE FUNC: get_sec
+
+COMPILE FUNC: randomize_matrix
+   -> DELETE: rand utils.c(58,37)
+   -> DELETE: rand utils.c(58,61)
+   -> DELETE: rand utils.c(59,17)
+
+COMPILE FUNC: copy_matrix
+
+COMPILE FUNC: verify_matrix
+
+COMPILE FUNC: test_mkl
+
+COMPILE FUNC: test_mydgemm_v21
+   -> mydgemm_cpu_v21 utils.c(92,5)
+
+COMPILE FUNC: test_mydgemm_v22
+   -> mydgemm_cpu_v22 utils.c(96,5)
+
+COMPILE FUNC: test_kernel
+   -> INLINE: test_mkl utils.c(101,17)
+   -> INLINE: test_mydgemm_v21 utils.c(102,18)
+      -> mydgemm_cpu_v21 utils.c(92,5)
+   -> INLINE: test_mydgemm_v22 utils.c(103,18)
+      -> mydgemm_cpu_v22 utils.c(96,5)
+
+---- End Inlining Report ------
+Register allocation report for: scale_c_k21
+FUNCTION BEGIN
+ 5 spills 
+ LOOP1 BEGIN at (././kernel21.h:28:9)
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:28:9)
+  8 reloads 2 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:34:9)
+  LOOP2 BEGIN at (././kernel21.h:35:13)
+  LOOP2 END
+  LOOP2 BEGIN at (././kernel21.h:35:13)
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:34:9)
+  LOOP2 BEGIN at (././kernel21.h:35:13)
+  LOOP2 END
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 4 [ mxcsr rip rsp ssp  ]
+ Available : 37 [ r10 r11 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 6 [ rbp rbx r12 r13 r14 r15  ]
+ Assigned : 17 [ eflags rax rbp rbx rcx rdi rdx rsi r8 r9 r12 r13 r14 r15 zmm0 zmm1 zmm2  ]
+
+Routine stack 
+ Variables : 76 Bytes
+   Read Count : 8
+   Write Count : 7
+ Spills : 92 Bytes
+   Read Count : 8
+   Write Count : 7
+
+FUNCTION END
+Register allocation report for: mydgemm_cpu_v21
+FUNCTION BEGIN
+ 29 reloads 66 spills 
+ LOOP1 BEGIN at (././kernel21.h:28:9 @[ ././kernel21.h:185:9 ])
+  1 reloads 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:28:9 @[ ././kernel21.h:185:9 ])
+  8 reloads 2 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:34:9 @[ ././kernel21.h:185:9 ])
+  2 reloads 1 spills 
+  LOOP2 BEGIN at (././kernel21.h:35:13 @[ ././kernel21.h:185:9 ])
+  LOOP2 END
+  LOOP2 BEGIN at (././kernel21.h:35:13 @[ ././kernel21.h:185:9 ])
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:34:9 @[ ././kernel21.h:185:9 ])
+  2 reloads 1 spills 
+  LOOP2 BEGIN at (././kernel21.h:35:13 @[ ././kernel21.h:185:9 ])
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:207:5)
+  24 reloads 45 spills 
+  LOOP2 BEGIN at (././kernel21.h:210:9)
+   64 reloads 49 spills 
+   LOOP3 BEGIN at (././kernel21.h:113:5 @[ ././kernel21.h:214:13 ])
+    4 reloads 
+    LOOP4 BEGIN at (././kernel21.h:114:9 @[ ././kernel21.h:214:13 ])
+    LOOP4 END
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel21.h:124:9 @[ ././kernel21.h:214:13 ])
+    12 reloads 2 spills 
+    LOOP4 BEGIN at (././kernel21.h:126:13 @[ ././kernel21.h:214:13 ])
+     1 reloads 
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel21.h:129:13 @[ ././kernel21.h:214:13 ])
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel21.h:126:13 @[ ././kernel21.h:214:13 ])
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel21.h:129:13 @[ ././kernel21.h:214:13 ])
+    LOOP4 END
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel21.h:126:13 @[ ././kernel21.h:214:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel21.h:129:13 @[ ././kernel21.h:214:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel21.h:216:13)
+    58 reloads 47 spills 
+    LOOP4 BEGIN at (././kernel21.h:85:5 @[ ././kernel21.h:220:17 ])
+     24 reloads 5 spills 
+     LOOP5 BEGIN at (././kernel21.h:86:9 @[ ././kernel21.h:220:17 ])
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel21.h:86:9 @[ ././kernel21.h:220:17 ])
+     LOOP5 END
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel21.h:96:9 @[ ././kernel21.h:220:17 ])
+     13 reloads 1 spills 
+     LOOP5 BEGIN at (././kernel21.h:98:13 @[ ././kernel21.h:220:17 ])
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel21.h:98:13 @[ ././kernel21.h:220:17 ])
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel21.h:98:13 @[ ././kernel21.h:220:17 ])
+     LOOP5 END
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel21.h:142:5 @[ ././kernel21.h:223:17 ])
+     13 reloads 10 spills 
+     LOOP5 BEGIN at (././kernel21.h:143:9 @[ ././kernel21.h:223:17 ])
+      56 reloads 19 spills 
+      LOOP6 BEGIN at (././kernel21.h:56:5 @[ ././kernel21.h:144:13 @[ ././kernel21.h:223:17 ] ])
+       4 reloads 
+      LOOP6 END
+      LOOP6 BEGIN at (././kernel21.h:56:5 @[ ././kernel21.h:144:13 @[ ././kernel21.h:223:17 ] ])
+      LOOP6 END
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel21.h:152:13 @[ ././kernel21.h:223:17 ])
+      5 reloads 
+      LOOP6 BEGIN at (././kernel21.h:153:17 @[ ././kernel21.h:223:17 ])
+      LOOP6 END
+     LOOP5 END
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel21.h:165:9 @[ ././kernel21.h:223:17 ])
+     6 reloads 3 spills 
+     LOOP5 BEGIN at (././kernel21.h:166:13 @[ ././kernel21.h:223:17 ])
+      20 reloads 
+      LOOP6 BEGIN at (././kernel21.h:168:17 @[ ././kernel21.h:223:17 ])
+      LOOP6 END
+      LOOP6 BEGIN at (././kernel21.h:168:17 @[ ././kernel21.h:223:17 ])
+      LOOP6 END
+     LOOP5 END
+    LOOP4 END
+   LOOP3 END
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:28:9 @[ ././kernel21.h:190:5 ])
+  1 reloads 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:28:9 @[ ././kernel21.h:190:5 ])
+  8 reloads 2 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:34:9 @[ ././kernel21.h:190:5 ])
+  1 reloads 
+  LOOP2 BEGIN at (././kernel21.h:35:13 @[ ././kernel21.h:190:5 ])
+  LOOP2 END
+  LOOP2 BEGIN at (././kernel21.h:35:13 @[ ././kernel21.h:190:5 ])
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel21.h:34:9 @[ ././kernel21.h:190:5 ])
+  1 reloads 
+  LOOP2 BEGIN at (././kernel21.h:35:13 @[ ././kernel21.h:190:5 ])
+  LOOP2 END
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 4 [ mxcsr rip rsp ssp  ]
+ Available : 6 [ k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 6 [ rbp rbx r12 r13 r14 r15  ]
+ Assigned : 48 [ eflags rax rbp rbx rcx rdi rdx rsi r8 r9 r10 r11 r12 r13 r14 r15 zmm0 zmm1 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31  ]
+
+Routine stack 
+ Variables : 1630 Bytes
+   Read Count : 390
+   Write Count : 253
+ Spills : 2318 Bytes
+   Read Count : 357
+   Write Count : 253
+
+FUNCTION END
+Register allocation report for: scale_c_k22
+FUNCTION BEGIN
+ 5 spills 
+ LOOP1 BEGIN at (././kernel22.h:28:9)
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:28:9)
+  8 reloads 2 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:34:9)
+  LOOP2 BEGIN at (././kernel22.h:35:13)
+  LOOP2 END
+  LOOP2 BEGIN at (././kernel22.h:35:13)
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:34:9)
+  LOOP2 BEGIN at (././kernel22.h:35:13)
+  LOOP2 END
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 4 [ mxcsr rip rsp ssp  ]
+ Available : 37 [ r10 r11 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 6 [ rbp rbx r12 r13 r14 r15  ]
+ Assigned : 17 [ eflags rax rbp rbx rcx rdi rdx rsi r8 r9 r12 r13 r14 r15 zmm0 zmm1 zmm2  ]
+
+Routine stack 
+ Variables : 76 Bytes
+   Read Count : 8
+   Write Count : 7
+ Spills : 92 Bytes
+   Read Count : 8
+   Write Count : 7
+
+FUNCTION END
+Register allocation report for: mydgemm_cpu_v22
+FUNCTION BEGIN
+ 31 reloads 69 spills 
+ LOOP1 BEGIN at (././kernel22.h:28:9 @[ ././kernel22.h:190:9 ])
+  1 reloads 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:28:9 @[ ././kernel22.h:190:9 ])
+  8 reloads 2 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:34:9 @[ ././kernel22.h:190:9 ])
+  2 reloads 1 spills 
+  LOOP2 BEGIN at (././kernel22.h:35:13 @[ ././kernel22.h:190:9 ])
+  LOOP2 END
+  LOOP2 BEGIN at (././kernel22.h:35:13 @[ ././kernel22.h:190:9 ])
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:34:9 @[ ././kernel22.h:190:9 ])
+  2 reloads 1 spills 
+  LOOP2 BEGIN at (././kernel22.h:35:13 @[ ././kernel22.h:190:9 ])
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:212:5)
+  25 reloads 48 spills 
+  LOOP2 BEGIN at (././kernel22.h:215:9)
+   84 reloads 56 spills 
+   LOOP3 BEGIN at (././kernel22.h:113:5 @[ ././kernel22.h:219:13 ])
+    45 reloads 1 spills 
+    LOOP4 BEGIN at (././kernel22.h:115:1 @[ ././kernel22.h:219:13 ])
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel22.h:115:1 @[ ././kernel22.h:219:13 ])
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel22.h:115:1 @[ ././kernel22.h:219:13 ])
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel22.h:115:1 @[ ././kernel22.h:219:13 ])
+    LOOP4 END
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:127:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:127:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:127:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:133:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:133:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:133:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:133:1 @[ ././kernel22.h:219:13 ])
+   LOOP3 END
+   LOOP3 BEGIN at (././kernel22.h:221:13)
+    58 reloads 47 spills 
+    LOOP4 BEGIN at (././kernel22.h:85:5 @[ ././kernel22.h:225:17 ])
+     25 reloads 3 spills 
+     LOOP5 BEGIN at (././kernel22.h:86:9 @[ ././kernel22.h:225:17 ])
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel22.h:86:9 @[ ././kernel22.h:225:17 ])
+     LOOP5 END
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel22.h:96:9 @[ ././kernel22.h:225:17 ])
+     7 reloads 
+     LOOP5 BEGIN at (././kernel22.h:98:13 @[ ././kernel22.h:225:17 ])
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel22.h:98:13 @[ ././kernel22.h:225:17 ])
+     LOOP5 END
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel22.h:147:5 @[ ././kernel22.h:228:17 ])
+     9 reloads 10 spills 
+     LOOP5 BEGIN at (././kernel22.h:148:9 @[ ././kernel22.h:228:17 ])
+      50 reloads 17 spills 
+      LOOP6 BEGIN at (././kernel22.h:56:5 @[ ././kernel22.h:149:13 @[ ././kernel22.h:228:17 ] ])
+       4 reloads 
+      LOOP6 END
+      LOOP6 BEGIN at (././kernel22.h:56:5 @[ ././kernel22.h:149:13 @[ ././kernel22.h:228:17 ] ])
+      LOOP6 END
+     LOOP5 END
+     LOOP5 BEGIN at (././kernel22.h:157:13 @[ ././kernel22.h:228:17 ])
+      6 reloads 
+      LOOP6 BEGIN at (././kernel22.h:158:17 @[ ././kernel22.h:228:17 ])
+      LOOP6 END
+     LOOP5 END
+    LOOP4 END
+    LOOP4 BEGIN at (././kernel22.h:170:9 @[ ././kernel22.h:228:17 ])
+     6 reloads 3 spills 
+     LOOP5 BEGIN at (././kernel22.h:171:13 @[ ././kernel22.h:228:17 ])
+      21 reloads 
+      LOOP6 BEGIN at (././kernel22.h:173:17 @[ ././kernel22.h:228:17 ])
+      LOOP6 END
+      LOOP6 BEGIN at (././kernel22.h:173:17 @[ ././kernel22.h:228:17 ])
+      LOOP6 END
+     LOOP5 END
+    LOOP4 END
+   LOOP3 END
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:28:9 @[ ././kernel22.h:195:5 ])
+  1 reloads 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:28:9 @[ ././kernel22.h:195:5 ])
+  8 reloads 2 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:34:9 @[ ././kernel22.h:195:5 ])
+  1 reloads 
+  LOOP2 BEGIN at (././kernel22.h:35:13 @[ ././kernel22.h:195:5 ])
+  LOOP2 END
+  LOOP2 BEGIN at (././kernel22.h:35:13 @[ ././kernel22.h:195:5 ])
+  LOOP2 END
+ LOOP1 END
+ LOOP1 BEGIN at (././kernel22.h:34:9 @[ ././kernel22.h:195:5 ])
+  1 reloads 
+  LOOP2 BEGIN at (././kernel22.h:35:13 @[ ././kernel22.h:195:5 ])
+  LOOP2 END
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 4 [ mxcsr rip rsp ssp  ]
+ Available : 5 [ k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 6 [ rbp rbx r12 r13 r14 r15  ]
+ Assigned : 49 [ eflags rax rbp rbx rcx rdi rdx rsi r8 r9 r10 r11 r12 r13 r14 r15 zmm0 zmm1 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1  ]
+
+Routine stack 
+ Variables : 1670 Bytes
+   Read Count : 431
+   Write Count : 260
+ Spills : 2378 Bytes
+   Read Count : 395
+   Write Count : 260
+
+FUNCTION END
+Register allocation report for: print_vector
+FUNCTION BEGIN
+ LOOP1 BEGIN at (utils.c:11:5)
+ LOOP1 END
+ LOOP1 BEGIN at (utils.c:11:5)
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 44 [ rbp rcx rdx r8 r9 r10 r11 zmm1 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 5 [ rbx r12 r13 r14 r15  ]
+ Assigned : 10 [ eflags rax rbx rdi rsi r12 r13 r14 r15 zmm0  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: print_matrix_lda
+FUNCTION BEGIN
+ 6 spills 
+ LOOP1 BEGIN at (utils.c:22:5)
+  6 reloads 
+  LOOP2 BEGIN at (utils.c:23:9)
+  LOOP2 END
+  LOOP2 BEGIN at (utils.c:23:9)
+  LOOP2 END
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 41 [ r8 r9 r10 r11 zmm1 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 6 [ rbp rbx r12 r13 r14 r15  ]
+ Assigned : 13 [ eflags rax rbp rbx rcx rdi rdx rsi r12 r13 r14 r15 zmm0  ]
+
+Routine stack 
+ Variables : 32 Bytes
+   Read Count : 7
+   Write Count : 6
+ Spills : 36 Bytes
+   Read Count : 6
+   Write Count : 6
+
+FUNCTION END
+Register allocation report for: print_matrix
+FUNCTION BEGIN
+ LOOP1 BEGIN at (utils.c:34:5)
+ LOOP1 END
+ LOOP1 BEGIN at (utils.c:34:5)
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 42 [ rcx r8 r9 r10 r11 zmm1 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 5 [ rbp r12 r13 r14 r15  ]
+ Assigned : 12 [ eflags rax rbp rbx rdi rdx rsi r12 r13 r14 r15 zmm0  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: get_sec
+FUNCTION BEGIN
+
+Hardware registers used
+ Reserved : 4 [ rsp ssp mxcsr rip  ]
+ Available : 48 [ rbp rbx rcx rdx r8 r9 r10 r11 r12 r13 r14 r15 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 0 [  ]
+ Assigned : 6 [ eflags rax rdi rsi zmm0 zmm1  ]
+
+Routine stack 
+ Variables : 16 Bytes
+   Read Count : 2
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: randomize_matrix
+FUNCTION BEGIN
+ LOOP1 BEGIN at (utils.c:57:9)
+  1 reloads 1 spills 
+ LOOP1 END
+ LOOP1 BEGIN at (utils.c:57:9)
+  8 reloads 8 spills 
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 4 [ rsp ssp rip mxcsr  ]
+ Available : 41 [ r8 r9 r10 r11 r13 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 4 [ rbx r14 r15 r12  ]
+ Assigned : 13 [ eflags rax rbp rbx rcx rdi rdx rsi r12 r14 r15 zmm0 zmm1  ]
+
+Routine stack 
+ Variables : 8 Bytes
+   Read Count : 9
+   Write Count : 9
+ Spills : 72 Bytes
+   Read Count : 9
+   Write Count : 9
+
+FUNCTION END
+Register allocation report for: copy_matrix
+FUNCTION BEGIN
+ LOOP1 BEGIN at (utils.c:66:5)
+ LOOP1 END
+ LOOP1 BEGIN at (utils.c:66:5)
+ LOOP1 END
+ LOOP1 BEGIN at (utils.c:66:5)
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 45 [ rbp r9 r10 r11 r12 r13 r14 r15 zmm1 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 0 [  ]
+ Assigned : 9 [ eflags rax rbx rcx rdi rdx rsi r8 zmm0  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: verify_matrix
+FUNCTION BEGIN
+ LOOP1 BEGIN at (utils.c:79:18)
+ LOOP1 END
+
+Hardware registers used
+ Reserved : 4 [ rsp ssp rip mxcsr  ]
+ Available : 42 [ rbp rbx r9 r10 r11 r12 r13 r14 r15 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 0 [  ]
+ Assigned : 12 [ eflags rax rcx rdi rdx rsi r8 zmm0 zmm1 zmm2 zmm3 zmm4  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: test_mkl
+FUNCTION BEGIN
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 42 [ rbp rbx r12 r13 r14 r15 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 0 [  ]
+ Assigned : 12 [ eflags rax rcx rdi rdx rsi r8 r9 r10 r11 zmm0 zmm1  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: test_mydgemm_v21
+FUNCTION BEGIN
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 44 [ rbp rbx r10 r11 r12 r13 r14 r15 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 0 [  ]
+ Assigned : 10 [ eflags rax rcx rdi rdx rsi r8 r9 zmm0 zmm1  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: test_mydgemm_v22
+FUNCTION BEGIN
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 44 [ rbp rbx r10 r11 r12 r13 r14 r15 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 0 [  ]
+ Assigned : 10 [ eflags rax rcx rdi rdx rsi r8 r9 zmm0 zmm1  ]
+
+Routine stack 
+ Variables : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END
+Register allocation report for: test_kernel
+FUNCTION BEGIN
+
+Hardware registers used
+ Reserved : 2 [ rsp ssp  ]
+ Available : 41 [ rbp r12 r13 r14 r15 zmm2 zmm3 zmm4 zmm5 zmm6 zmm7 zmm8 zmm9 zmm10 zmm11 zmm12 zmm13 zmm14 zmm15 zmm16 zmm17 zmm18 zmm19 zmm20 zmm21 zmm22 zmm23 zmm24 zmm25 zmm26 zmm27 zmm28 zmm29 zmm30 zmm31 k0_k1 k2_k3 k4_k5 k6_k7 tmm4_tmm5 tmm6_tmm7  ]
+ Callee Saved : 1 [ rbx  ]
+ Assigned : 13 [ eflags rax rbx rcx rdi rdx rsi r8 r9 r10 r11 zmm0 zmm1  ]
+
+Routine stack 
+ Variables : 8 Bytes
+   Read Count : 1
+   Write Count : 0
+ Spills : 0 Bytes
+   Read Count : 0
+   Write Count : 0
+
+FUNCTION END

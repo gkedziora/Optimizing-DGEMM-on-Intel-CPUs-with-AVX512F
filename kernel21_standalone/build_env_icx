@@ -1,0 +1,4 @@
+source /opt/cray/pe/modules/3.2.11.7/init/bash
+#module swap craype-x86-rome craype-x86-turin
+module swap PrgEnv-cray PrgEnv-intel
+module swap intel/2023.2.1 comp-intel/2025.2.1

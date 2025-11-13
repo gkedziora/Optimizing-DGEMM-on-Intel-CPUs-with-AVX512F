@@ -1,0 +1,121 @@
+csv:size,time s,GFlops
+
+M=N=K=100:
+Average elasped time: 0.000062 second, performance: 32.099265 GFLOPS.
+csv:100,0.000062,32.099
+
+M=N=K=200:
+Average elasped time: 0.000338 second, performance: 47.337548 GFLOPS.
+csv:200,0.000338,47.338
+
+M=N=K=300:
+Average elasped time: 0.001019 second, performance: 52.976551 GFLOPS.
+csv:300,0.001019,52.977
+
+M=N=K=400:
+Average elasped time: 0.002294 second, performance: 55.788456 GFLOPS.
+csv:400,0.002294,55.788
+
+M=N=K=500:
+Average elasped time: 0.004197 second, performance: 59.561261 GFLOPS.
+csv:500,0.004197,59.561
+
+M=N=K=600:
+Average elasped time: 0.007105 second, performance: 60.801973 GFLOPS.
+csv:600,0.007105,60.802
+
+M=N=K=700:
+Average elasped time: 0.010950 second, performance: 62.646077 GFLOPS.
+csv:700,0.010950,62.646
+
+M=N=K=800:
+Average elasped time: 0.016912 second, performance: 60.548497 GFLOPS.
+csv:800,0.016912,60.548
+
+M=N=K=900:
+Average elasped time: 0.023573 second, performance: 61.849585 GFLOPS.
+csv:900,0.023573,61.850
+
+M=N=K=1000:
+Average elasped time: 0.032133 second, performance: 62.242035 GFLOPS.
+csv:1000,0.032133,62.242
+
+M=N=K=1100:
+Average elasped time: 0.042800 second, performance: 62.195757 GFLOPS.
+csv:1100,0.042800,62.196
+
+M=N=K=1200:
+Average elasped time: 0.057008 second, performance: 60.623041 GFLOPS.
+csv:1200,0.057008,60.623
+
+M=N=K=1300:
+Average elasped time: 0.071777 second, performance: 61.217360 GFLOPS.
+csv:1300,0.071777,61.217
+
+M=N=K=1400:
+Average elasped time: 0.088784 second, performance: 61.812732 GFLOPS.
+csv:1400,0.088784,61.813
+
+M=N=K=1500:
+Average elasped time: 0.111105 second, performance: 60.753360 GFLOPS.
+csv:1500,0.111105,60.753
+
+M=N=K=1600:
+Average elasped time: 0.136547 second, performance: 59.993991 GFLOPS.
+csv:1600,0.136547,59.994
+
+M=N=K=1700:
+Average elasped time: 0.166557 second, performance: 58.994821 GFLOPS.
+csv:1700,0.166557,58.995
+
+M=N=K=1800:
+Average elasped time: 0.192731 second, performance: 60.519689 GFLOPS.
+csv:1800,0.192731,60.520
+
+M=N=K=1900:
+Average elasped time: 0.233070 second, performance: 58.857840 GFLOPS.
+csv:1900,0.233070,58.858
+
+M=N=K=2000:
+Average elasped time: 0.264310 second, performance: 60.535041 GFLOPS.
+csv:2000,0.264310,60.535
+
+M=N=K=2100:
+Average elasped time: 0.317247 second, performance: 58.383591 GFLOPS.
+csv:2100,0.317247,58.384
+
+M=N=K=2200:
+Average elasped time: 0.349853 second, performance: 60.871287 GFLOPS.
+csv:2200,0.349853,60.871
+
+M=N=K=2300:
+Average elasped time: 0.406623 second, performance: 59.844183 GFLOPS.
+csv:2300,0.406623,59.844
+
+M=N=K=2400:
+Average elasped time: 0.458848 second, performance: 60.255206 GFLOPS.
+csv:2400,0.458848,60.255
+
+M=N=K=2500:
+Average elasped time: 0.531774 second, performance: 58.765570 GFLOPS.
+csv:2500,0.531774,58.766
+
+M=N=K=2600:
+Average elasped time: 0.574602 second, performance: 61.176295 GFLOPS.
+csv:2600,0.574602,61.176
+
+M=N=K=2700:
+Average elasped time: 0.675410 second, performance: 58.284567 GFLOPS.
+csv:2700,0.675410,58.285
+
+M=N=K=2800:
+Average elasped time: 0.715222 second, performance: 61.385112 GFLOPS.
+csv:2800,0.715222,61.385
+
+M=N=K=2900:
+Average elasped time: 0.836599 second, performance: 58.305112 GFLOPS.
+csv:2900,0.836599,58.305
+
+M=N=K=3000:
+Average elasped time: 0.880663 second, performance: 61.317462 GFLOPS.
+csv:3000,0.880663,61.317

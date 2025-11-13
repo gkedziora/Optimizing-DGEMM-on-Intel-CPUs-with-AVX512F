@@ -13,14 +13,14 @@ int main(int argc, char *argv[]){
                 1200,1300,1400,1500,1600,1700,1800,1900,2000,\
                 2100,2200,2300,2400,2500,2600,2700,2800,2900,3000};//testing 100-3000 square matrices
     int kernel_num=atoi(argv[1]);
-    if (kernel_num<0||kernel_num>21) {
-        printf("Please enter a valid kernel number (0-20).\n");
-        exit(-2);
+    if (kernel_num<21||kernel_num>22) {
+      printf("Please enter a valid kernel number (0-22).\n");
+      fflush(stdout);
+      exit(-2);
     }
     int m, n, k,max_size=3000;
     int n_count,N=3,upper_limit;
-    if (kernel_num<=4&&kernel_num!=0 || kernel_num == 20) upper_limit=10;
-    else upper_limit=30;
+    upper_limit=30;
     double *A=NULL,*B=NULL,*C=NULL,*C_ref=NULL;
     double alpha = 2.0, beta = 0.;//two arbitary input parameters
     double t0,t1;
@@ -28,6 +28,9 @@ int main(int argc, char *argv[]){
     B=(double *)malloc(sizeof(double)*max_size*max_size);
     C=(double *)malloc(sizeof(double)*max_size*max_size);
     C_ref=(double *)malloc(sizeof(double)*max_size*max_size);
+
+    printf("csv:size,time s,GFlops\n");
+    fflush(stdout);
 
     randomize_matrix(A,max_size,max_size);randomize_matrix(B,max_size,max_size);randomize_matrix(C,max_size,max_size);copy_matrix(C,C_ref,max_size*max_size);
     for (int i_count=0;i_count<upper_limit;i_count++){
@@ -47,6 +50,8 @@ int main(int argc, char *argv[]){
         }
         t1=get_sec();
         printf("Average elasped time: %f second, performance: %f GFLOPS.\n", (t1-t0)/N,2.*1e-9*N*m*n*k/(t1-t0));
+        printf("csv:%d,%.6f,%.3f\n",m,(t1-t0)/N,2.*1e-9*N*m*n*k/(t1-t0));
+        fflush(stdout);
         copy_matrix(C_ref,C,m*n);//sync C with Intel MKl to prepare for the next run
     }
     free(A);free(B);free(C);free(C_ref);
